@@ -41,7 +41,7 @@ function Postbar(props){
 
 
      const config = { headers: { 'Content-Type': 'multipart/form-data' } };
-	   const URL = "http://abdulsemed.pythonanywhere.com/imggl";
+	   const URL = "https://abdulsemed.pythonanywhere.com/imggl";
      let formData = new FormData();
      formData.append("img",postimage);
      formData.append("post", x);

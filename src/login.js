@@ -102,7 +102,7 @@ function Login() {
       }
       e.preventDefault()
       
-      var res = await fetch('http://abdulsemed.pythonanywhere.com/give',{
+      var res = await fetch('https://abdulsemed.pythonanywhere.com/give',{
       method: 'POST',
       headers:{
         'content-type': 'application/json',

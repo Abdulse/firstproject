@@ -9,7 +9,7 @@ function Mainbar(){
   
   async function postd (){
     if(posted === 0){
-    let res = await fetch('http://abdulsemed.pythonanywhere.com/imgg',{
+    let res = await fetch('https://abdulsemed.pythonanywhere.com/imgg',{
         method: 'GET',
         headers:{
           'content-type': 'application/json'
@@ -51,7 +51,7 @@ function Mainbar(){
                 x.append(y)
   
               }
-              let img = "http://abdulsemed.pythonanywhere.com"
+              let img = "https://abdulsemed.pythonanywhere.com"
               if(key === 'img' && value[key] !== null){
                 
                 let mgg = img + value[key]
@@ -92,7 +92,7 @@ function Mainbar(){
         }
       }
       if(posted > 0){
-        let res = await fetch('http://abdulsemed.pythonanywhere.com/imgg',{
+        let res = await fetch('https://abdulsemed.pythonanywhere.com/imgg',{
           method: 'GET',
           headers:{
             'content-type': 'application/json'
@@ -124,7 +124,7 @@ function Mainbar(){
             
 
 
-            let img = "http://abdulsemed.pythonanywhere.com"
+            let img = "https://abdulsemed.pythonanywhere.com"
 
             if(key === 'postli'){
 

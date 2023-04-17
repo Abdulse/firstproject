@@ -36,7 +36,7 @@ function App() {
   }
     
     
-    let res = await fetch('http://abdulsemed.pythonanywhere.com/api/token/',{
+    let res = await fetch('https://abdulsemed.pythonanywhere.com/api/token/',{
       method: 'POST',
       headers:{
         'content-type': 'application/json'
@@ -71,7 +71,7 @@ function App() {
    if(logi) {
     if(auth){
       
-      let res = await fetch('http://abdulsemed.pythonanywhere.com/api/token/refresh/',{
+      let res = await fetch('https://abdulsemed.pythonanywhere.com/api/token/refresh/',{
       method: 'POST',
       headers:{
         'content-type': 'application/json'

@@ -10,14 +10,14 @@ function Mypostbar(props){
   var posted = 0
 
   async function myFunction(id){
-    await axios.delete(`http://abdulsemed.pythonanywhere.com/l/${id}`).then()
+    await axios.delete(`https://abdulsemed.pythonanywhere.com/l/${id}`).then()
   }
  
   
   
   async function postd (){
   
-    let res = await fetch('http://abdulsemed.pythonanywhere.com/imgg',{
+    let res = await fetch('https://abdulsemed.pythonanywhere.com/imgg',{
         method: 'GET',
         headers:{
           'content-type': 'application/json'
@@ -91,7 +91,7 @@ function Mypostbar(props){
                 x.append(yx)
   
               }
-              let img = "http://abdulsemed.pythonanywhere.com"
+              let img = "https://abdulsemed.pythonanywhere.com"
               if(key === 'img' && value[key] !== null){
                 
                 let mgg = img + value[key]
