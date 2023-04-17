@@ -152,10 +152,16 @@ function App() {
 
   },[auth,logi])
 
+  const meta = {
+    meta:{ http-equiv :"Content-Security-Policy",
+            content:"upgrade-insecure-requests"}
+  }
+
 
   return (
-   <loginContext.Provider value= {nn} >
-
+  
+   <loginContext.Provider value= {nn} >   
+    <DocumentMeta {...meta} />  
   
     <Routes>
     
